@@ -1,5 +1,5 @@
 class ScenarioSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :text, :responses
-  has_many :responses
+  attributes :text, #:responses
+  #has_many :responses
 end
