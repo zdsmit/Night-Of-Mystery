@@ -5,7 +5,7 @@ function getScenario() {
   fetch(SCENARIO_URL)
   .then(res => res.json())
   .then(scenarios => {
-    scenarios.forEach(scenario => {
+    scenarios.data.forEach(scenario => {
       createScenario(scenario)
     })
   })
@@ -16,10 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 function createScenario(scenario) {
-  let body = document.getElementsByTagName("BODY")
+    let div = document.createElement('div')
+  //let body = document.getElementsByTagName("BODY")
 
   let p = document.createElement("p")
   p.setAttribute("class", "scenario_text")
-  p.innerText = scenario.text
-  body.appendChild(p)
+  p.innerText = scenario.attributes.text
+  div.appendChild(p)
+  document.querySelector("main").appendChild(div)
+  //body.appendChild(p)
 }
