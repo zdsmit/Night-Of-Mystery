@@ -1,4 +1,4 @@
 class ScenarioSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :text
 end

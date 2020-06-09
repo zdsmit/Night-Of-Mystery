@@ -1,4 +1,4 @@
 class ResponseSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :number, :text
 end
