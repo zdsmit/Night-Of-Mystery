@@ -13,8 +13,9 @@
 ActiveRecord::Schema.define(version: 2020_06_05_151945) do
 
   create_table "responses", force: :cascade do |t|
-    t.integer "number"
+    t.integer "result"
     t.string "text"
+    t.integer "scenario_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -141,3 +141,465 @@ Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.5ms)
 ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: responses.scenario_id: SELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?):
   
 app/controllers/scenarios_controller.rb:5:in `index'
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-09 10:35:28 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by ScenariosController#index as */*
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/learn/Portfolio_Projects/pauls_adventure/backend/app/serializers/scenario_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/scenario_serializer.rb:5: syntax error, unexpected end
+app/controllers/scenarios_controller.rb:5:in `index'
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-09 10:36:18 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-09 10:36:43 -0700
+Processing by ScenariosController#index as HTML
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-09 10:37:27 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-09 10:39:04 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-09 10:40:18 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-09 10:41:49 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-09 10:42:52 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-09 10:43:24 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-09 10:44:04 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-09 10:44:19 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-09 10:44:27 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-10 08:45:59 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 28ms (Views: 13.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-10 08:53:13 -0700
+Processing by ScenariosController#index as */*
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/learn/Portfolio_Projects/pauls_adventure/backend/app/serializers/scenario_serializer.rb:3: syntax error, unexpected ':', expecting end
+  attributes :text :responses
+                   ^):
+  
+app/serializers/scenario_serializer.rb:3: syntax error, unexpected ':', expecting end
+app/controllers/scenarios_controller.rb:5:in `index'
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-10 08:53:48 -0700
+Processing by ScenariosController#index as HTML
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/learn/Portfolio_Projects/pauls_adventure/backend/app/serializers/scenario_serializer.rb:3: syntax error, unexpected ':', expecting end
+  attributes :text :responses
+                   ^):
+  
+app/serializers/scenario_serializer.rb:3: syntax error, unexpected ':', expecting end
+app/controllers/scenarios_controller.rb:5:in `index'
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-10 08:54:06 -0700
+Processing by ScenariosController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/learn/Portfolio_Projects/pauls_adventure/backend/app/serializers/scenario_serializer.rb:3: syntax error, unexpected ':', expecting end
+  attributes :text :responses
+                   ^):
+  
+app/serializers/scenario_serializer.rb:3: syntax error, unexpected ':', expecting end
+app/controllers/scenarios_controller.rb:5:in `index'
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-10 08:54:20 -0700
+Processing by ScenariosController#index as HTML
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/learn/Portfolio_Projects/pauls_adventure/backend/app/serializers/scenario_serializer.rb:3: syntax error, unexpected ':', expecting end
+  attributes :text :responses
+                   ^):
+  
+app/serializers/scenario_serializer.rb:3: syntax error, unexpected ':', expecting end
+app/controllers/scenarios_controller.rb:5:in `index'
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-10 08:54:40 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by ScenariosController#index as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/learn/Portfolio_Projects/pauls_adventure/backend/app/serializers/scenario_serializer.rb:3: syntax error, unexpected ':', expecting end
+  attributes :text :responses
+                   ^):
+  
+app/serializers/scenario_serializer.rb:3: syntax error, unexpected ':', expecting end
+app/controllers/scenarios_controller.rb:5:in `index'
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-10 08:54:50 -0700
+Processing by ScenariosController#index as HTML
+  [1m[36mScenario Load (0.7ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 2.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: responses.scenario_id: SELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?):
+  
+app/controllers/scenarios_controller.rb:5:in `index'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mScenario Create (2.8ms)[0m  [1m[32mINSERT INTO "scenarios" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "\n  One quiet day, Paul is sitting at home, when he suddenly hears a noise.\n  It sounds like it's coming from outside the house. What does he do?\n"], ["created_at", "2020-06-10 16:00:41.604630"], ["updated_at", "2020-06-10 16:00:41.604630"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mScenario Create (2.6ms)[0m  [1m[32mINSERT INTO "scenarios" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "\n  One quiet day, Paul is sitting at home, when he suddenly hears a noise.\n  It sounds like it's coming from outside the house. What does he do?\n"], ["created_at", "2020-06-10 16:02:06.501625"], ["updated_at", "2020-06-10 16:02:06.501625"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (49.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mScenario Create (1.8ms)[0m  [1m[32mINSERT INTO "scenarios" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "\n  One quiet day, Paul is sitting at home, when he suddenly hears a noise.\n  It sounds like it's coming from outside the house. What does he do?\n"], ["created_at", "2020-06-10 16:02:56.371315"], ["updated_at", "2020-06-10 16:02:56.371315"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mScenario Create (2.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "\n  One quiet day, Paul is sitting at home, when he suddenly hears a noise.\n  It sounds like it's coming from outside the house. What does he do?\n"], ["created_at", "2020-06-10 16:04:03.923468"], ["updated_at", "2020-06-10 16:04:03.923468"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (50.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateResponses (20200605151945)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20200605151945"]]
+  ↳ bin/rails:9
+  [1m[35m (18.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateResponses (20200605151945)
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20200605151945_create_responses.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "result" integer, "text" varchar, "scenario_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200605151945_create_responses.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200605151945"]]
+  ↳ bin/rails:9
+  [1m[35m (43.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mScenario Create (2.8ms)[0m  [1m[32mINSERT INTO "scenarios" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "\n  One quiet day, Paul is sitting at home, when he suddenly hears a noise.\n  It sounds like it's coming from outside the house. What does he do?\n"], ["created_at", "2020-06-10 16:06:08.246367"], ["updated_at", "2020-06-10 16:06:08.246367"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (46.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mScenario Create (2.1ms)[0m  [1m[32mINSERT INTO "scenarios" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "\n  One quiet day, Paul is sitting at home, when he suddenly hears a noise.\n  It sounds like it's coming from outside the house. What does he do?\n"], ["created_at", "2020-06-10 16:07:35.490103"], ["updated_at", "2020-06-10 16:07:35.490103"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (11.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mScenario Load (0.4ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mScenario Destroy (48.0ms)[0m  [1m[31mDELETE FROM "scenarios"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mResponse Destroy (10.3ms)[0m  [1m[31mDELETE FROM "responses"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mScenario Create (2.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "\n  One quiet day, Paul is sitting at home, when he suddenly hears a noise.\n  It sounds like it's coming from outside the house. What does he do?\n"], ["created_at", "2020-06-10 16:09:29.646302"], ["updated_at", "2020-06-10 16:09:29.646302"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mScenario Load (0.5ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mScenario Destroy (49.0ms)[0m  [1m[31mDELETE FROM "scenarios"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mResponse Destroy (10.5ms)[0m  [1m[31mDELETE FROM "responses"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mScenario Create (2.7ms)[0m  [1m[32mINSERT INTO "scenarios" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "\n  One quiet day, Paul is sitting at home, when he suddenly hears a noise.\n  It sounds like it's coming from outside the house. What does he do?\n"], ["created_at", "2020-06-10 16:10:16.964811"], ["updated_at", "2020-06-10 16:10:16.964811"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mScenario Load (0.4ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mScenario Destroy (13.9ms)[0m  [1m[31mDELETE FROM "scenarios"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mResponse Destroy (12.7ms)[0m  [1m[31mDELETE FROM "responses"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mScenario Create (3.1ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 0], ["text", "\n  One quiet day, Paul is sitting at home, when he suddenly hears a noise.\n  It sounds like it's coming from outside the house. What does he do?\n"], ["created_at", "2020-06-10 16:11:04.008175"], ["updated_at", "2020-06-10 16:11:04.008175"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mScenario Load (0.3ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-10 09:12:35 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 26ms (Views: 15.9ms | ActiveRecord: 1.4ms)
+
+
