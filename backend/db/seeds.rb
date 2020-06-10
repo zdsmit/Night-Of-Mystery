@@ -14,23 +14,18 @@ scenario1 = Scenario.create(id: 0, text: "
   It sounds like it's coming from outside the house. What does he do?
 ")
 
-response1 = Response.create(text: "
+response1 = Response.create(result: 2, scenario_id: 0, text: "
   Investigate the noise
 ")
 
-response2 = Response.create(text: "
+response2 = Response.create(result: 2, scenario_id: 0, text: "
   Call the police
 ")
 
-response3 = Response.create(text: "
+response3 = Response.create(result: 2, scenario_id: 0, text: "
   Shout out the window to see if anyone responds
 ")
 
-response4 = Response.create(text: "
+response4 = Response.create(result: 2, scenario_id: 0, text: "
   Sit back down and do nothing
 ")
-
-response1.scenario = scenario1
-response2.scenario = scenario1
-response3.scenario = scenario1
-response4.scenario = scenario1
