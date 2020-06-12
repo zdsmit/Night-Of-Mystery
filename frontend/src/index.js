@@ -6,7 +6,7 @@ function getScenario() {
   .then(res => res.json())
   .then(scenarios => {
     scenarios.data.forEach(scenario => {
-      createScenario(scenario)
+      if (scenario.id == 1) {createScenario(scenario)}
     })
   })
 }
@@ -16,13 +16,25 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 function createScenario(scenario) {
-    let div = document.createElement('div')
-  //let body = document.getElementsByTagName("BODY")
+  let div = document.createElement("div")
 
   let p = document.createElement("p")
   p.setAttribute("class", "scenario_text")
   p.innerText = scenario.attributes.text
+
+  let ol = document.createElement("ol")
+  scenario.attributes.responses.forEach(response => {
+    let li = document.createElement("li")
+    li.innerText = response.text
+    ol.appendChild(li)
+
+    li.addEventListener("click", function() {
+      div.removeChild(p)
+      
+    })
+  })
+
+  p.appendChild(ol)
   div.appendChild(p)
   document.querySelector("main").appendChild(div)
-  //body.appendChild(p)
 }
