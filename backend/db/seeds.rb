@@ -18,23 +18,40 @@ response1_1 = Response.create(result: 2, scenario_id: 1, text: "
   Investigate the noise
 ")
 
-response1_2 = Response.create(result: 2, scenario_id: 1, text: "
+response1_2 = Response.create(result: 3, scenario_id: 1, text: "
   Call the police
 ")
 
-response1_3 = Response.create(result: 2, scenario_id: 1, text: "
+response1_3 = Response.create(result: 3, scenario_id: 1, text: "
   Shout out the window to see if anyone responds
 ")
 
-response1_4 = Response.create(result: 2, scenario_id: 1, text: "
+response1_4 = Response.create(result: 3, scenario_id: 1, text: "
   Sit back down and do nothing
 ")
 
 
 
 scenario2 = Scenario.create(id: 2, text: "
+  Paul walks outside to investigate the noise. He looks around a bit, but finds there is nobody there.
+  Upon further inspection, however, he discovers a small object on the ground.
+  He picks it up and realizes that it's a ring. There seems to be something strange about the ring, but it's too dark to tell.
+  Looking around, he sees there is a street lamp nearby.
+")
+
+response2_1 = Response.create(result: 3, scenario_id: 2, text: "
+  Walk over to the street lamp to inspect the ring
+")
+response2_2 = Response.create(result:3, scenario_id: 2, text: "
+  Return home to inspect the ring
+")
+
+
+
+scenario3 = Scenario.create(id: 3, text: "
   To be continued...
 ")
-response2_1 = Response.create(result: 1, scenario_id: 2, text: "
+
+response3_1 = Response.create(result: 1, scenario_id: 3, text: "
   Return to start
 ")
