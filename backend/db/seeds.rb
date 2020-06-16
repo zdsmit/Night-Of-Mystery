@@ -59,10 +59,10 @@ response2_2 = Response.create(result:7, scenario_id: 2, text: "
 
 
 scenario3 = Scenario.create(id: 3, text: "
-  He calls the police and tells them about the strange noise. The dispatcher on the line asks if anything like this has happened before.
+  He calls the police and describes the strange noise. The dispatcher on the line asks if anything like this has happened before.
 ")
 
-response3_1 = Response.create(result: 0, scenario_id: 3, text: "
+response3_1 = Response.create(result: 8, scenario_id: 3, text: "
   'No, this is definitely a first'
 ")
 
@@ -75,11 +75,9 @@ scenario4 = Scenario.create(id: 4, text: "
 response4_1 = Response.create(result: 2, scenario_id: 4, text: "
   Investigate the noise
 ")
-
 response4_2 = Response.create(result: 3, scenario_id: 4, text: "
   Call the police
 ")
-
 response4_3 = Response.create(result: 5, scenario_id: 4, text: "
   Sit back down and do nothing
 ")
@@ -92,6 +90,7 @@ scenario5 = Scenario.create(id: 5, text: "
   
   The End
 ")
+
 response5_1 = Response.create(result: 1, scenario_id: 5, text: "
   It seems Paul's adventure is over before it began. Return to the start to see how things could have been different.
 ")
@@ -105,10 +104,10 @@ scenario6 = Scenario.create(id: 6, text: "
   It reads 'Leave humanity behind you'.
 ")
 
-response6_1 = Response.create(result: 0, scenario_id: 6, text: "
+response6_1 = Response.create(result: 9, scenario_id: 6, text: "
   Take it
 ")
-response6_2 = Response.create(result: 0, scenario_id: 6, text: "
+response6_2 = Response.create(result: 10, scenario_id: 6, text: "
   Leave it
 ")
 
@@ -120,7 +119,7 @@ scenario7 = Scenario.create(id: 7, text: "
   After the awkward pause passes, the beast makes a sound and some weird guys walk in as well.
   Somebody grabs Paul from behind and restrains him. A man walks up and takes the ring.
   'Thank you for this wonderful gift', he says. 'But it is my turn next, not yours'.
-  The beast makes a motion and one of the men shoots Paul. They leave Paul lying there in the floor and set the scene up to look like a home invasion.
+  The beast makes a gesture and one of the men shoots Paul. They leave Paul lying there in the floor and set the scene up to look like an ordinary home invasion.
   Paul dies.
 
   The End
@@ -137,10 +136,10 @@ scenario8 = Scenario.create(id: 8, text: "
   The dispatcher asks if Paul feels like he is in danger and if he would like to have an officer come by.
 ")
 
-response8_1 = Response.create(result: 0, scenario_id: 8, text: "
+response8_1 = Response.create(result: 11, scenario_id: 8, text: "
   'No, that's okay.'
 ")
-response8_2 = Response.create(result: 0, scenario_id: 8, text: "
+response8_2 = Response.create(result: 12, scenario_id: 8, text: "
   'Yeah, that would be great.'
 ")
 
@@ -170,4 +169,33 @@ scenario10 = Scenario.create(id: 10, text: "
 
 response10_1 = Response.create(result: 0, scenario_id: 10, text: "
   Go to bed
+")
+
+
+
+scenario11 = Scenario.create(id: 11, text: "
+  Paul tells the dispatcher everything is fine now, and that the sound seems to have stopped.
+  She tells him to stay inside and call again if anything else seems amiss.
+  After hanging up the phone, Paul receives another phone call. It's his girlfriend, Lucy.
+")
+
+response11_1 = Response.create(result: 0, scenario_id: 11, text: "
+  Answer the phone
+")
+response11_2 = Response.create(result: 0, scenario_id: 11, text: "
+  Don't answer the phone
+")
+
+
+
+scenario12 = Scenario.create(id: 12, text: "
+  Paul requests an officer to come by the house. The dispatcher tells him to stay put inside, and that an officer will arrive to check on him shortly.
+  After hanging up the phone, Paul receives another phone call. It's his girlfriend, Lucy.
+")
+
+response12_1 = Response.create(result: 0, scenario_id: 12, text: "
+  Answer the phone
+")
+response12_2 = Response.create(result: 0, scenario_id: 12, text: "
+  Don't answer the phone
 ")
