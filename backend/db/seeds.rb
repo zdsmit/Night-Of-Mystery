@@ -62,8 +62,8 @@ scenario3 = Scenario.create(id: 3, text: "
   He calls the police and tells them about the strange noise. The dispatcher on the line asks if anything like this has happened before.
 ")
 
-response3_1 = Response.create(result: 1, scenario_id: 3, text: "
-  Return to start
+response3_1 = Response.create(result: 0, scenario_id: 3, text: "
+  'No, this is definitely a first'
 ")
 
 
@@ -129,4 +129,17 @@ scenario7 = Scenario.create(id: 7, text: "
 response7_1 = Response.create(result: 1, scenario_id: 7, text: "
   It seems Paul has died just as a great mystery was unfolding. Well, death is bad.
   Go back to the start and continue the investigation to discover the truth of the mysterious beast.
+")
+
+
+
+scenario8 = Scenario.create(id: 8, text: "
+  The dispatcher asks if Paul feels like he is in danger and if he would like to have an officer come by.
+")
+
+response8_1 = Response.create(result: 0, scenario_id: 8, text: "
+  'No, that's okay.'
+")
+response8_2 = Response.create(result: 0, scenario_id: 8, text: "
+  'Yeah, that would be great.'
 ")
