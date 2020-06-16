@@ -143,3 +143,31 @@ response8_1 = Response.create(result: 0, scenario_id: 8, text: "
 response8_2 = Response.create(result: 0, scenario_id: 8, text: "
   'Yeah, that would be great.'
 ")
+
+
+
+scenario9 = Scenario.create(id: 9, text: "
+  Paul takes the ring and puts it in his pocket, then heads back towards his house.
+  On the way back, however, his phone rings. It's his girlfriend, Lucy.
+")
+
+response9_1 = Response.create(result: 0, scenario_id: 9, text: "
+  Answer the phone
+")
+response9_2 = Response.create(result: 0, scenario_id: 9, text: "
+  Don't answer the phone
+")
+
+
+
+scenario10 = Scenario.create(id: 10, text: "
+  Paul leaves the ring where he found it on the ground and returns to his house.
+  He finds some strange hair on the carpet, but otherwise, nothing seems amiss. Disturbed by the hair he found, he tries to sit down.
+  Just at that moment, another noise outside gets his attention. He returns outside to try and find the source.
+  Outside, he finds that the source of the sound, as well as the mysterious ring, are long gone. Paul cannot help but feel he has made a critical mistake.
+  However, the feeling soon passes and he returns home and goes to bed, soon to forget about the evening's events.
+")
+
+response10_1 = Response.create(result: 0, scenario_id: 10, text: "
+  Go to bed
+")
