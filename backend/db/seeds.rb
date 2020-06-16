@@ -17,6 +17,8 @@ response0_1 = Response.create(result: 1, scenario_id: 0, text: "
   Return to start
 ")
 
+
+
 scenario1 = Scenario.create(id: 1, text: "
   One quiet day, Paul is sitting at home, when he suddenly hears a noise.
   It sounds like it's coming from outside the house. What does he do?
@@ -47,10 +49,10 @@ scenario2 = Scenario.create(id: 2, text: "
   Looking around, he sees there is a street lamp nearby.
 ")
 
-response2_1 = Response.create(result: 0, scenario_id: 2, text: "
+response2_1 = Response.create(result: 6, scenario_id: 2, text: "
   Walk over to the street lamp to inspect the ring
 ")
-response2_2 = Response.create(result:0, scenario_id: 2, text: "
+response2_2 = Response.create(result:7, scenario_id: 2, text: "
   Return home to inspect the ring
 ")
 
@@ -83,6 +85,7 @@ response4_3 = Response.create(result: 5, scenario_id: 4, text: "
 ")
 
 
+
 scenario5 = Scenario.create(id: 5, text: "
   Paul sits back down on the couch. His favorite show is on.
   The next day, he hears there is some commotion nearby, but it does not concern him.
@@ -91,4 +94,39 @@ scenario5 = Scenario.create(id: 5, text: "
 ")
 response5_1 = Response.create(result: 1, scenario_id: 5, text: "
   It seems Paul's adventure is over before it began. Return to the start to see how things could have been different.
+")
+
+
+
+scenario6 = Scenario.create(id: 6, text: "
+  Paul walks under the light of the street lamp to inspect the ring.
+  The ring is smooth and has a black, metallic sheen.
+  Upon further inspection, there is writing on the inside of the ring.
+  It reads 'Leave humanity behind you'.
+")
+
+response6_1 = Response.create(result: 0, scenario_id: 6, text: "
+  Take it
+")
+response6_2 = Response.create(result: 0, scenario_id: 6, text: "
+  Leave it
+")
+
+
+
+scenario7 = Scenario.create(id: 7, text: "
+  Paul returns home to inspect the ring. However, as soon as he walks in the door, he is greeted with an unwelcome surprise.
+  An inhuman beast is standing in Paul's living room staring at him. It is very awkward.
+  After the awkward pause passes, the beast makes a sound and some weird guys walk in as well.
+  Somebody grabs Paul from behind and restrains him. A man walks up and takes the ring.
+  'Thank you for this wonderful gift', he says. 'But it is my turn next, not yours'.
+  The beast makes a motion and one of the men shoots Paul. They leave Paul lying there in the floor and set the scene up to look like a home invasion.
+  Paul dies.
+
+  The End
+")
+
+response7_1 = Response.create(result: 1, scenario_id: 7, text: "
+  It seems Paul has died just as a great mystery was unfolding. Well, death is bad.
+  Go back to the start and continue the investigation to discover the truth of the mysterious beast.
 ")

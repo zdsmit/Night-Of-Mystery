@@ -1868,3 +1868,1613 @@ Processing by ScenariosController#index as */*
 Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 1.8ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mScenario Destroy (52.6ms)[0m  [1m[31mDELETE FROM "scenarios"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mResponse Destroy (11.2ms)[0m  [1m[31mDELETE FROM "responses"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mScenario Create (2.5ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 0], ["text", "\n  To be continued...\n"], ["created_at", "2020-06-16 15:31:23.380506"], ["updated_at", "2020-06-16 15:31:23.380506"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mResponse Create (2.7ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 1], ["text", "\n  Return to start\n"], ["scenario_id", 0], ["created_at", "2020-06-16 15:31:23.421020"], ["updated_at", "2020-06-16 15:31:23.421020"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["text", "\n  One quiet day, Paul is sitting at home, when he suddenly hears a noise.\n  It sounds like it's coming from outside the house. What does he do?\n"], ["created_at", "2020-06-16 15:31:23.433704"], ["updated_at", "2020-06-16 15:31:23.433704"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 2], ["text", "\n  Investigate the noise\n"], ["scenario_id", 1], ["created_at", "2020-06-16 15:31:23.445094"], ["updated_at", "2020-06-16 15:31:23.445094"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 3], ["text", "\n  Call the police\n"], ["scenario_id", 1], ["created_at", "2020-06-16 15:31:23.458246"], ["updated_at", "2020-06-16 15:31:23.458246"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 4], ["text", "\n  Shout out the window to see if anyone responds\n"], ["scenario_id", 1], ["created_at", "2020-06-16 15:31:23.468913"], ["updated_at", "2020-06-16 15:31:23.468913"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 5], ["text", "\n  Sit back down and do nothing\n"], ["scenario_id", 1], ["created_at", "2020-06-16 15:31:23.480261"], ["updated_at", "2020-06-16 15:31:23.480261"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mScenario Create (0.3ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 2], ["text", "\n  Paul walks outside to investigate the noise. He looks around a bit, but finds there is nobody there.\n  Upon further inspection, however, he discovers a small object on the ground.\n  He picks it up and realizes that it's a ring. There seems to be something strange about the ring, but it's too dark to tell.\n  Looking around, he sees there is a street lamp nearby.\n"], ["created_at", "2020-06-16 15:31:23.491621"], ["updated_at", "2020-06-16 15:31:23.491621"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:52
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mResponse Create (0.4ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 0], ["text", "\n  Walk over to the street lamp to inspect the ring\n"], ["scenario_id", 2], ["created_at", "2020-06-16 15:31:23.509399"], ["updated_at", "2020-06-16 15:31:23.509399"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:55
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:55
+  [1m[36mResponse Create (0.4ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 0], ["text", "\n  Return home to inspect the ring\n"], ["scenario_id", 2], ["created_at", "2020-06-16 15:31:23.524904"], ["updated_at", "2020-06-16 15:31:23.524904"]]
+  ↳ db/seeds.rb:55
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[36mScenario Create (2.0ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 3], ["text", "\n  He calls the police and tells them about the strange noise. The dispatcher on the line asks if anything like this has happened before.\n"], ["created_at", "2020-06-16 15:31:23.538029"], ["updated_at", "2020-06-16 15:31:23.538029"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:65
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:65
+  [1m[36mResponse Create (3.6ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 1], ["text", "\n  Return to start\n"], ["scenario_id", 3], ["created_at", "2020-06-16 15:31:23.553824"], ["updated_at", "2020-06-16 15:31:23.553824"]]
+  ↳ db/seeds.rb:65
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:71
+  [1m[36mScenario Create (0.4ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 4], ["text", "\n  He shouts out the window, but there is no response.\n"], ["created_at", "2020-06-16 15:31:23.572833"], ["updated_at", "2020-06-16 15:31:23.572833"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:75
+  [1m[36mResponse Create (0.4ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 2], ["text", "\n  Investigate the noise\n"], ["scenario_id", 4], ["created_at", "2020-06-16 15:31:23.588859"], ["updated_at", "2020-06-16 15:31:23.588859"]]
+  ↳ db/seeds.rb:75
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:79
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 3], ["text", "\n  Call the police\n"], ["scenario_id", 4], ["created_at", "2020-06-16 15:31:23.604141"], ["updated_at", "2020-06-16 15:31:23.604141"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:83
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:83
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 5], ["text", "\n  Sit back down and do nothing\n"], ["scenario_id", 4], ["created_at", "2020-06-16 15:31:23.617207"], ["updated_at", "2020-06-16 15:31:23.617207"]]
+  ↳ db/seeds.rb:83
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:89
+  [1m[36mScenario Create (0.4ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 5], ["text", "\n  Paul sits back down on the couch. His favorite show is on.\n  The next day, he hears there is some commotion nearby, but it does not concern him.\n  \n  The End\n"], ["created_at", "2020-06-16 15:31:23.630054"], ["updated_at", "2020-06-16 15:31:23.630054"]]
+  ↳ db/seeds.rb:89
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:89
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:95
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:95
+  [1m[36mResponse Create (2.8ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 1], ["text", "\n  It seems Paul's adventure is over before it began. Return to the start to see how things could have been different.\n"], ["scenario_id", 5], ["created_at", "2020-06-16 15:31:23.646101"], ["updated_at", "2020-06-16 15:31:23.646101"]]
+  ↳ db/seeds.rb:95
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[36mScenario Create (0.3ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 6], ["text", "\n  Paul walks under the light of the street lamp to inspect the ring.\n  The ring is smooth and has a black, metallic sheen.\n  Upon further inspection, there is writing on the inside of the ring.\n  It reads 'Leave humanity behind you'.\n"], ["created_at", "2020-06-16 15:31:23.658097"], ["updated_at", "2020-06-16 15:31:23.658097"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:108
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:108
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 0], ["text", "\n  Take it\n"], ["scenario_id", 6], ["created_at", "2020-06-16 15:31:23.669551"], ["updated_at", "2020-06-16 15:31:23.669551"]]
+  ↳ db/seeds.rb:108
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:111
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:111
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 0], ["text", "\n  Leave it\n"], ["scenario_id", 6], ["created_at", "2020-06-16 15:31:23.681450"], ["updated_at", "2020-06-16 15:31:23.681450"]]
+  ↳ db/seeds.rb:111
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:111
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:117
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 7], ["text", "\n  Paul returns home to inspect the ring. However, as soon as he walks in the door, he is greeted with an unwelcome surprise.\n  An inhuman beast is standing in Paul's living room staring at him. It is very awkward.\n  After the awkward pause passes, the beast makes a sound and some weird guys walk in as well.\n  Somebody grabs Paul from behind and restrains him. A man walks up and takes the ring.\n  'Thank you for this wonderful gift', he says. 'But it is my turn next, not yours'.\n  The beast makes a motion and one of the men shoots Paul. They leave Paul lying there in the floor and set the scene up to look like a home invasion.\n  Paul dies.\n\n  The End\n"], ["created_at", "2020-06-16 15:31:23.690652"], ["updated_at", "2020-06-16 15:31:23.690652"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mScenario Destroy (49.5ms)[0m  [1m[31mDELETE FROM "scenarios"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mResponse Destroy (5.9ms)[0m  [1m[31mDELETE FROM "responses"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mScenario Create (2.5ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 0], ["text", "\n  To be continued...\n"], ["created_at", "2020-06-16 15:31:42.498831"], ["updated_at", "2020-06-16 15:31:42.498831"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mResponse Create (2.3ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 1], ["text", "\n  Return to start\n"], ["scenario_id", 0], ["created_at", "2020-06-16 15:31:42.536010"], ["updated_at", "2020-06-16 15:31:42.536010"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["text", "\n  One quiet day, Paul is sitting at home, when he suddenly hears a noise.\n  It sounds like it's coming from outside the house. What does he do?\n"], ["created_at", "2020-06-16 15:31:42.547387"], ["updated_at", "2020-06-16 15:31:42.547387"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mResponse Create (0.1ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 2], ["text", "\n  Investigate the noise\n"], ["scenario_id", 1], ["created_at", "2020-06-16 15:31:42.556661"], ["updated_at", "2020-06-16 15:31:42.556661"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 3], ["text", "\n  Call the police\n"], ["scenario_id", 1], ["created_at", "2020-06-16 15:31:42.567143"], ["updated_at", "2020-06-16 15:31:42.567143"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 4], ["text", "\n  Shout out the window to see if anyone responds\n"], ["scenario_id", 1], ["created_at", "2020-06-16 15:31:42.577956"], ["updated_at", "2020-06-16 15:31:42.577956"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 5], ["text", "\n  Sit back down and do nothing\n"], ["scenario_id", 1], ["created_at", "2020-06-16 15:31:42.587271"], ["updated_at", "2020-06-16 15:31:42.587271"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 2], ["text", "\n  Paul walks outside to investigate the noise. He looks around a bit, but finds there is nobody there.\n  Upon further inspection, however, he discovers a small object on the ground.\n  He picks it up and realizes that it's a ring. There seems to be something strange about the ring, but it's too dark to tell.\n  Looking around, he sees there is a street lamp nearby.\n"], ["created_at", "2020-06-16 15:31:42.597669"], ["updated_at", "2020-06-16 15:31:42.597669"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:52
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 0], ["text", "\n  Walk over to the street lamp to inspect the ring\n"], ["scenario_id", 2], ["created_at", "2020-06-16 15:31:42.608444"], ["updated_at", "2020-06-16 15:31:42.608444"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:55
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:55
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 0], ["text", "\n  Return home to inspect the ring\n"], ["scenario_id", 2], ["created_at", "2020-06-16 15:31:42.618846"], ["updated_at", "2020-06-16 15:31:42.618846"]]
+  ↳ db/seeds.rb:55
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 3], ["text", "\n  He calls the police and tells them about the strange noise. The dispatcher on the line asks if anything like this has happened before.\n"], ["created_at", "2020-06-16 15:31:42.628626"], ["updated_at", "2020-06-16 15:31:42.628626"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:65
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:65
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 1], ["text", "\n  Return to start\n"], ["scenario_id", 3], ["created_at", "2020-06-16 15:31:42.640439"], ["updated_at", "2020-06-16 15:31:42.640439"]]
+  ↳ db/seeds.rb:65
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:71
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 4], ["text", "\n  He shouts out the window, but there is no response.\n"], ["created_at", "2020-06-16 15:31:42.651490"], ["updated_at", "2020-06-16 15:31:42.651490"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:75
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 2], ["text", "\n  Investigate the noise\n"], ["scenario_id", 4], ["created_at", "2020-06-16 15:31:42.661262"], ["updated_at", "2020-06-16 15:31:42.661262"]]
+  ↳ db/seeds.rb:75
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:79
+  [1m[36mResponse Create (0.1ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 3], ["text", "\n  Call the police\n"], ["scenario_id", 4], ["created_at", "2020-06-16 15:31:42.671112"], ["updated_at", "2020-06-16 15:31:42.671112"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:83
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:83
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 5], ["text", "\n  Sit back down and do nothing\n"], ["scenario_id", 4], ["created_at", "2020-06-16 15:31:42.680146"], ["updated_at", "2020-06-16 15:31:42.680146"]]
+  ↳ db/seeds.rb:83
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:89
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 5], ["text", "\n  Paul sits back down on the couch. His favorite show is on.\n  The next day, he hears there is some commotion nearby, but it does not concern him.\n  \n  The End\n"], ["created_at", "2020-06-16 15:31:42.690931"], ["updated_at", "2020-06-16 15:31:42.690931"]]
+  ↳ db/seeds.rb:89
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:89
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:95
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:95
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 1], ["text", "\n  It seems Paul's adventure is over before it began. Return to the start to see how things could have been different.\n"], ["scenario_id", 5], ["created_at", "2020-06-16 15:31:42.701473"], ["updated_at", "2020-06-16 15:31:42.701473"]]
+  ↳ db/seeds.rb:95
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 6], ["text", "\n  Paul walks under the light of the street lamp to inspect the ring.\n  The ring is smooth and has a black, metallic sheen.\n  Upon further inspection, there is writing on the inside of the ring.\n  It reads 'Leave humanity behind you'.\n"], ["created_at", "2020-06-16 15:31:42.712124"], ["updated_at", "2020-06-16 15:31:42.712124"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:108
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:108
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 0], ["text", "\n  Take it\n"], ["scenario_id", 6], ["created_at", "2020-06-16 15:31:42.723344"], ["updated_at", "2020-06-16 15:31:42.723344"]]
+  ↳ db/seeds.rb:108
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:111
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:111
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 0], ["text", "\n  Leave it\n"], ["scenario_id", 6], ["created_at", "2020-06-16 15:31:42.734505"], ["updated_at", "2020-06-16 15:31:42.734505"]]
+  ↳ db/seeds.rb:111
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:111
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:117
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 7], ["text", "\n  Paul returns home to inspect the ring. However, as soon as he walks in the door, he is greeted with an unwelcome surprise.\n  An inhuman beast is standing in Paul's living room staring at him. It is very awkward.\n  After the awkward pause passes, the beast makes a sound and some weird guys walk in as well.\n  Somebody grabs Paul from behind and restrains him. A man walks up and takes the ring.\n  'Thank you for this wonderful gift', he says. 'But it is my turn next, not yours'.\n  The beast makes a motion and one of the men shoots Paul. They leave Paul lying there in the floor and set the scene up to look like a home invasion.\n  Paul dies.\n\n  The End\n"], ["created_at", "2020-06-16 15:31:42.745600"], ["updated_at", "2020-06-16 15:31:42.745600"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:129
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:129
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 1], ["text", "\n  It seems Paul has died before he was able to uncover the truth. Well, death is bad.\n  Go back to the start and continue the investigation to its end.\n"], ["scenario_id", 7], ["created_at", "2020-06-16 15:31:42.757081"], ["updated_at", "2020-06-16 15:31:42.757081"]]
+  ↳ db/seeds.rb:129
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:129
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:32:06 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 81ms (Views: 68.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:32:07 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.8ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 46ms (Views: 39.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:32:09 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 44ms (Views: 40.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:32:10 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:39:02 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.3ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:39:04 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 45ms (Views: 42.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:39:06 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.3ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 60ms (Views: 54.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:39:08 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:39:33 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:39:38 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 42ms (Views: 39.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:39:39 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 40ms (Views: 36.5ms | ActiveRecord: 3.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mScenario Destroy (18.7ms)[0m  [1m[31mDELETE FROM "scenarios"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mResponse Destroy (9.3ms)[0m  [1m[31mDELETE FROM "responses"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mScenario Create (2.0ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 0], ["text", "\n  To be continued...\n"], ["created_at", "2020-06-16 15:40:09.280308"], ["updated_at", "2020-06-16 15:40:09.280308"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mResponse Create (3.3ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 1], ["text", "\n  Return to start\n"], ["scenario_id", 0], ["created_at", "2020-06-16 15:40:09.315273"], ["updated_at", "2020-06-16 15:40:09.315273"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["text", "\n  One quiet day, Paul is sitting at home, when he suddenly hears a noise.\n  It sounds like it's coming from outside the house. What does he do?\n"], ["created_at", "2020-06-16 15:40:09.327373"], ["updated_at", "2020-06-16 15:40:09.327373"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 2], ["text", "\n  Investigate the noise\n"], ["scenario_id", 1], ["created_at", "2020-06-16 15:40:09.336126"], ["updated_at", "2020-06-16 15:40:09.336126"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 3], ["text", "\n  Call the police\n"], ["scenario_id", 1], ["created_at", "2020-06-16 15:40:09.346138"], ["updated_at", "2020-06-16 15:40:09.346138"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 4], ["text", "\n  Shout out the window to see if anyone responds\n"], ["scenario_id", 1], ["created_at", "2020-06-16 15:40:09.356404"], ["updated_at", "2020-06-16 15:40:09.356404"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 5], ["text", "\n  Sit back down and do nothing\n"], ["scenario_id", 1], ["created_at", "2020-06-16 15:40:09.366161"], ["updated_at", "2020-06-16 15:40:09.366161"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 2], ["text", "\n  Paul walks outside to investigate the noise. He looks around a bit, but finds there is nobody there.\n  Upon further inspection, however, he discovers a small object on the ground.\n  He picks it up and realizes that it's a ring. There seems to be something strange about the ring, but it's too dark to tell.\n  Looking around, he sees there is a street lamp nearby.\n"], ["created_at", "2020-06-16 15:40:09.374951"], ["updated_at", "2020-06-16 15:40:09.374951"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:52
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 6], ["text", "\n  Walk over to the street lamp to inspect the ring\n"], ["scenario_id", 2], ["created_at", "2020-06-16 15:40:09.384628"], ["updated_at", "2020-06-16 15:40:09.384628"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:55
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:55
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 7], ["text", "\n  Return home to inspect the ring\n"], ["scenario_id", 2], ["created_at", "2020-06-16 15:40:09.395638"], ["updated_at", "2020-06-16 15:40:09.395638"]]
+  ↳ db/seeds.rb:55
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 3], ["text", "\n  He calls the police and tells them about the strange noise. The dispatcher on the line asks if anything like this has happened before.\n"], ["created_at", "2020-06-16 15:40:09.405251"], ["updated_at", "2020-06-16 15:40:09.405251"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:65
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:65
+  [1m[36mResponse Create (0.1ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 1], ["text", "\n  Return to start\n"], ["scenario_id", 3], ["created_at", "2020-06-16 15:40:09.415969"], ["updated_at", "2020-06-16 15:40:09.415969"]]
+  ↳ db/seeds.rb:65
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:71
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 4], ["text", "\n  He shouts out the window, but there is no response.\n"], ["created_at", "2020-06-16 15:40:09.425606"], ["updated_at", "2020-06-16 15:40:09.425606"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:75
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 2], ["text", "\n  Investigate the noise\n"], ["scenario_id", 4], ["created_at", "2020-06-16 15:40:09.435725"], ["updated_at", "2020-06-16 15:40:09.435725"]]
+  ↳ db/seeds.rb:75
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:79
+  [1m[36mResponse Create (0.1ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 3], ["text", "\n  Call the police\n"], ["scenario_id", 4], ["created_at", "2020-06-16 15:40:09.445027"], ["updated_at", "2020-06-16 15:40:09.445027"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:83
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:83
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 5], ["text", "\n  Sit back down and do nothing\n"], ["scenario_id", 4], ["created_at", "2020-06-16 15:40:09.455376"], ["updated_at", "2020-06-16 15:40:09.455376"]]
+  ↳ db/seeds.rb:83
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:83
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:89
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 5], ["text", "\n  Paul sits back down on the couch. His favorite show is on.\n  The next day, he hears there is some commotion nearby, but it does not concern him.\n  \n  The End\n"], ["created_at", "2020-06-16 15:40:09.463576"], ["updated_at", "2020-06-16 15:40:09.463576"]]
+  ↳ db/seeds.rb:89
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:89
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:95
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:95
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 1], ["text", "\n  It seems Paul's adventure is over before it began. Return to the start to see how things could have been different.\n"], ["scenario_id", 5], ["created_at", "2020-06-16 15:40:09.474211"], ["updated_at", "2020-06-16 15:40:09.474211"]]
+  ↳ db/seeds.rb:95
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 6], ["text", "\n  Paul walks under the light of the street lamp to inspect the ring.\n  The ring is smooth and has a black, metallic sheen.\n  Upon further inspection, there is writing on the inside of the ring.\n  It reads 'Leave humanity behind you'.\n"], ["created_at", "2020-06-16 15:40:09.483377"], ["updated_at", "2020-06-16 15:40:09.483377"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:108
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:108
+  [1m[36mResponse Create (0.1ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 0], ["text", "\n  Take it\n"], ["scenario_id", 6], ["created_at", "2020-06-16 15:40:09.493100"], ["updated_at", "2020-06-16 15:40:09.493100"]]
+  ↳ db/seeds.rb:108
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:111
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:111
+  [1m[36mResponse Create (0.1ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 0], ["text", "\n  Leave it\n"], ["scenario_id", 6], ["created_at", "2020-06-16 15:40:09.504534"], ["updated_at", "2020-06-16 15:40:09.504534"]]
+  ↳ db/seeds.rb:111
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:111
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:117
+  [1m[36mScenario Create (0.2ms)[0m  [1m[32mINSERT INTO "scenarios" ("id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 7], ["text", "\n  Paul returns home to inspect the ring. However, as soon as he walks in the door, he is greeted with an unwelcome surprise.\n  An inhuman beast is standing in Paul's living room staring at him. It is very awkward.\n  After the awkward pause passes, the beast makes a sound and some weird guys walk in as well.\n  Somebody grabs Paul from behind and restrains him. A man walks up and takes the ring.\n  'Thank you for this wonderful gift', he says. 'But it is my turn next, not yours'.\n  The beast makes a motion and one of the men shoots Paul. They leave Paul lying there in the floor and set the scene up to look like a home invasion.\n  Paul dies.\n\n  The End\n"], ["created_at", "2020-06-16 15:40:09.513782"], ["updated_at", "2020-06-16 15:40:09.513782"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:129
+  [1m[36mScenario Load (0.1ms)[0m  [1m[34mSELECT  "scenarios".* FROM "scenarios" WHERE "scenarios"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:129
+  [1m[36mResponse Create (0.1ms)[0m  [1m[32mINSERT INTO "responses" ("result", "text", "scenario_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["result", 1], ["text", "\n  It seems Paul has died before he was able to uncover the truth. Well, death is bad.\n  Go back to the start and continue the investigation to its end.\n"], ["scenario_id", 7], ["created_at", "2020-06-16 15:40:09.524680"], ["updated_at", "2020-06-16 15:40:09.524680"]]
+  ↳ db/seeds.rb:129
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:129
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:40:13 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.9ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.8ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 77ms (Views: 62.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:40:15 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:40:16 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:40:23 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.6ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:40:24 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:40:25 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (1.3ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 43ms (Views: 39.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:40:26 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 60ms (Views: 57.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:41:43 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:41:45 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:42:07 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:42:09 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:42:10 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (1.6ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:42:11 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 48ms (Views: 45.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:42:14 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.3ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:42:26 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 45ms (Views: 41.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:42:28 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/scenarios" for 127.0.0.1 at 2020-06-16 08:42:30 -0700
+Processing by ScenariosController#index as */*
+  [1m[36mScenario Load (0.2ms)[0m  [1m[34mSELECT "scenarios".* FROM "scenarios"[0m
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "responses"."id" FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 0]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 1]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 2]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 3]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 4]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 5]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 6]]
+  ↳ app/controllers/scenarios_controller.rb:5
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."scenario_id" = ?[0m  [["scenario_id", 7]]
+  ↳ app/controllers/scenarios_controller.rb:5
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 2.8ms)
+
+
