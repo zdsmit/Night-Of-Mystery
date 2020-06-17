@@ -199,3 +199,18 @@ response12_1 = Response.create(result: 0, scenario_id: 12, text: "
 response12_2 = Response.create(result: 0, scenario_id: 12, text: "
   Don't answer the phone
 ")
+
+
+
+scenario13 = Scenario.create(id: 13, text: "
+  Paul answers Lucy's call. 'Hey, babe', she says. 'You at home?'
+  Paul tells her he is. She then asks if Paul can meet her tomorrow in a park in the city.
+  What she says next, however, takes Paul by surprise. 'And Paul. Bring that ring you found.'
+  Lucy hangs up. Paul is naturally very confused about the conversation he just had, but tries to put it out of his mind.
+  Try as he might, however, he cannot stop thinking about it. He tries to go to sleep. For several hours, he cannot stop his mind from racing.
+  But eventually, exhaustion kicks in and he drifts off into sleep.
+")
+
+response13_1 = Response.create(result: 0, scenario_id: 13, text: "
+  Sleep
+")
