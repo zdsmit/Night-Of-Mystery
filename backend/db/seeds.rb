@@ -150,10 +150,10 @@ scenario9 = Scenario.create(id: 9, text: "
   On the way back, however, his phone rings. It's his girlfriend, Lucy.
 ")
 
-response9_1 = Response.create(result: 0, scenario_id: 9, text: "
+response9_1 = Response.create(result: 13, scenario_id: 9, text: "
   Answer the phone
 ")
-response9_2 = Response.create(result: 0, scenario_id: 9, text: "
+response9_2 = Response.create(result: 14, scenario_id: 9, text: "
   Don't answer the phone
 ")
 
@@ -213,4 +213,19 @@ scenario13 = Scenario.create(id: 13, text: "
 
 response13_1 = Response.create(result: 0, scenario_id: 13, text: "
   Sleep
+")
+
+
+
+scenario14 = Scenario.create(id: 14, text: "
+  Paul decides not to talk to Lucy, and instead goes straight to bed.
+  He has a lot on his mind, but doesn't have too much trouble sleeping.
+  When morning comes, he wakes up to a knock at his door. After quickly getting dressed, he answers.
+  His girlfriend Lucy is at the door. Paul briefly explains the night he just had and apologizes for ignoring her phone call.
+  'It's fine', she says. 'But if you have time, would you mind going to park with me? There's something I want to talk to you about.'
+  Feeling there is little choice in the matter, Paul decides to go with her.
+")
+
+response14_1 = Response.create(result: 0, scenario_id: 14, text: "
+  Go to the park with Lucy
 ")
