@@ -11,10 +11,6 @@ function getScenario(id) {
   })
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  //getScenario(1)
-})
-
 document.getElementById("start-button").addEventListener("click", () => {
   getScenario(1)
 })
@@ -22,6 +18,8 @@ document.getElementById("start-button").addEventListener("click", () => {
 function createScenario(scenario) {
   document.querySelector("header").innerHTML = ""
   document.querySelector("main").innerHTML = ""
+
+
   let div = document.createElement("div")
 
   let p = document.createElement("p")
