@@ -42,3 +42,20 @@ function createScenario(scenario) {
   p.appendChild(ol)
   document.querySelector("main").appendChild(div)
 }
+
+class Hero {
+
+  constructor(name) {
+    this.name = name
+  }
+
+}
+
+
+class Heroine {
+
+  constructor(name) {
+    this.name = name
+  }
+
+}
