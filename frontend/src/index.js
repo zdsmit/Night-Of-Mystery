@@ -11,7 +11,8 @@ function getScenario(id) {
   })
 }
 
-document.getElementById("start-button").addEventListener("click", () => {
+document.getElementById("start-button").addEventListener("click", function(event) {
+  event.preventDefault()
   getScenario(1)
 })
 
@@ -53,6 +54,15 @@ class Hero {
 
 
 class Heroine {
+
+  constructor(name) {
+    this.name = name
+  }
+
+}
+
+
+class Item {
 
   constructor(name) {
     this.name = name
