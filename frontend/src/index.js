@@ -35,7 +35,8 @@ function createScenario(scenario) {
 
   let p = document.createElement("p")
   p.setAttribute("class", "scenario_text")
-  p.innerText = scenario.attributes.text
+  let alteredText = insertOption(scenario.attributes.text, hero.name)
+  p.innerText = alteredText
   div.appendChild(p)
 
   let ol = document.createElement("ol")
@@ -52,6 +53,16 @@ function createScenario(scenario) {
 
   p.appendChild(ol)
   document.querySelector("main").appendChild(div)
+}
+
+let insertOption = function(text, name) {
+  let split = text.split(" ")
+  split.forEach(word => {
+    if (word == "Paul") {
+      split.splice(split.indexOf(word), 1, name)
+    }
+  })
+  return split.join(" ")
 }
 
 class Hero {
