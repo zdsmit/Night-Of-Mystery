@@ -1,6 +1,10 @@
 const BASE_URL = "http://localhost:3000"
 const SCENARIO_URL = `${BASE_URL}/scenarios`
 
+let heroName
+let heroineName
+let itemType
+
 function getScenario(id) {
   fetch(SCENARIO_URL)
   .then(res => res.json())
@@ -13,6 +17,9 @@ function getScenario(id) {
 
 document.getElementById("start-button").addEventListener("click", function(event) {
   event.preventDefault()
+  heroName = document.getElementById("male-first-name").value
+  heroineName = document.getElementById("female-first-name").value
+  itemType = document.getElementById("object").value
   getScenario(1)
 })
 
@@ -20,6 +27,9 @@ function createScenario(scenario) {
   document.querySelector("header").innerHTML = ""
   document.querySelector("main").innerHTML = ""
 
+  let hero = new Hero(heroName)
+  let heroine = new Heroine(heroineName)
+  let item = new Item(itemType)
 
   let div = document.createElement("div")
 
