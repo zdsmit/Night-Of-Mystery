@@ -57,12 +57,23 @@ function createScenario(scenario) {
 
 let insertOption = function(text, oldName, newName) {
   let split = text.split(" ")
-  split.forEach(word => {
-    if (word == oldName) {
-      split.splice(split.indexOf(word), 1, newName)
-    }
+  let replaced = split.forEach(word => {
+    let doubleSplit = word.split(/[.,\/#!$%\^&\*;:{}=\-_`~()]/)
+    let filtered = doubleSplit.forEach(pureWord => {
+      if (pureWord == oldName) {
+        doubleSplit.splice(doubleSplit.indexOf(pureWord), 1, newName)
+      }
+      //console.log(doubleSplit.join(""))
+      return doubleSplit.join("")
+    })
+    //if (word == oldName) {
+      //doubleSplit.splice(doubleSplit.indexOf(word), 1, newName)
+    //}
+    console.log(filtered)
+    return filtered
   })
-  return split.join(" ")
+  //console.log(replaced)
+  return replaced.join(" ")
 }
 
 let nounFilter = function(text, maleName, femaleName, itemType) {
