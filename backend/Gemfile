@@ -64,3 +64,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'fast_jsonapi'
 
 gem 'rack-cors'
+
+gem "rack", ">= 2.2.3"
