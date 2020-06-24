@@ -35,7 +35,7 @@ function createScenario(scenario) {
 
   let p = document.createElement("p")
   p.setAttribute("class", "scenario_text")
-  let alteredText = insertOption(scenario.attributes.text, hero.name)
+  let alteredText = nounFilter(scenario.attributes.text, hero.name, heroine.name, item.name)
   p.innerText = alteredText
   div.appendChild(p)
 
@@ -55,14 +55,21 @@ function createScenario(scenario) {
   document.querySelector("main").appendChild(div)
 }
 
-let insertOption = function(text, name) {
+let insertOption = function(text, oldName, newName) {
   let split = text.split(" ")
   split.forEach(word => {
-    if (word == "Paul") {
-      split.splice(split.indexOf(word), 1, name)
+    if (word == oldName) {
+      split.splice(split.indexOf(word), 1, newName)
     }
   })
   return split.join(" ")
+}
+
+let nounFilter = function(text, maleName, femaleName, itemType) {
+  let filter1 = insertOption(text, "Paul", maleName)
+  let filter2 = insertOption(filter1, "Lucy", femaleName)
+  let filter3 = insertOption(filter2, "ring", itemType)
+  return filter3
 }
 
 class Hero {
