@@ -45,7 +45,8 @@ function createScenario(scenario) {
   let ol = document.createElement("ol")
   scenario.attributes.responses.forEach(response => {
     let li = document.createElement("li")
-    li.innerText = response.text
+    let responseText = nounFilter(response.text, hero.name, heroine.name, item.name)
+    li.innerText = responseText
     ol.appendChild(li)
 
     li.addEventListener("click", function() {
@@ -61,16 +62,10 @@ function createScenario(scenario) {
 let insertOption = function(text, oldName, newName) {
   let split = text.split(" ")
   split.forEach(word => {
-    let splitWord = word.split("")
-    let filtered =  splitWord.filter(word => word != /[.,\/#!$%\^&\*;:{}=\-_`~()]/)
-    console.log(filtered)
-    if (splitWord[0] == oldName) {
-      splitWord.splice(0, 1, newName)
+    if (word == oldName) {
+      split.splice(split.indexOf(word), 1, newName)
     }
-    //console.log(splitWord.join(" "))
-    word = splitWord.join(" ")
   })
-  //console.log(split)
   return split.join(" ")
 }
 
