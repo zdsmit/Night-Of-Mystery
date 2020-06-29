@@ -37,6 +37,9 @@ function createScenario(scenario) {
   p.setAttribute("class", "scenario_text")
   let alteredText = nounFilter(scenario.attributes.text, hero.name, heroine.name, item.name)
   p.innerText = alteredText
+  if (scenario.id == 7) {
+    p.style.color = "red"
+  }
   div.appendChild(p)
 
   let ol = document.createElement("ol")
