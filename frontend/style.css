@@ -1,8 +1,10 @@
 body {
   background: black;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
   color: red;
+  font-family: "creepster"
 }
