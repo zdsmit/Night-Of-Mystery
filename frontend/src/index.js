@@ -17,6 +17,14 @@ function getScenario(id) {
   })
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  let div = document.createElement("div")
+  let h2 = document.createElement("h2")
+  h2.innerText = "Users"
+  div.appendChild(h2)
+  document.querySelector("main").appendChild(div)
+})
+
 document.getElementById("start-button").addEventListener("click", function(event) {
   event.preventDefault()
   userName = document.getElementById("user-name").value
@@ -31,7 +39,7 @@ document.getElementById("start-button").addEventListener("click", function(event
       name: userName
     })
   }
-  
+
   heroName = document.getElementById("male-first-name").value
   heroineName = document.getElementById("female-first-name").value
   itemType = document.getElementById("object").value
