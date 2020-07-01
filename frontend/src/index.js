@@ -17,20 +17,21 @@ function getScenario(id) {
   })
 }
 
-let userConfig = {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    "Accept": "application/json"
-  },
-  body: JSON.stringify({
-    name: userName
-  })
-}
-
 document.getElementById("start-button").addEventListener("click", function(event) {
   event.preventDefault()
   userName = document.getElementById("user-name").value
+  
+  let userConfig = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({
+      name: userName
+    })
+  }
+  
   heroName = document.getElementById("male-first-name").value
   heroineName = document.getElementById("female-first-name").value
   itemType = document.getElementById("object").value
