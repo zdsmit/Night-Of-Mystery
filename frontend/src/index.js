@@ -1,6 +1,8 @@
 const BASE_URL = "http://localhost:3000"
 const SCENARIO_URL = `${BASE_URL}/scenarios`
+const USERS_URL = `${BASE_URL}/users`
 
+let userName
 let heroName
 let heroineName
 let itemType
@@ -15,11 +17,24 @@ function getScenario(id) {
   })
 }
 
+let userConfig = {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "Accept": "application/json"
+  },
+  body: JSON.stringify({
+    name: userName
+  })
+}
+
 document.getElementById("start-button").addEventListener("click", function(event) {
   event.preventDefault()
+  userName = document.getElementById("user-name").value
   heroName = document.getElementById("male-first-name").value
   heroineName = document.getElementById("female-first-name").value
   itemType = document.getElementById("object").value
+  fetch(USERS_URL, userConfig);
   getScenario(1)
 })
 
