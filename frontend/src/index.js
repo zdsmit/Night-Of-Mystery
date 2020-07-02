@@ -74,7 +74,7 @@ function createScenario(scenario) {
 
   let p = document.createElement("p")
   p.setAttribute("class", "scenario_text")
-  let alteredText = insertOption(scenario.attributes.text, "ring", itemType)
+  let alteredText = nounFilter(scenario.attributes.text, hero.name, heroine.name, item.name)
   p.innerText = alteredText
   if (scenario.id == 7) {
     p.style.color = "red"
