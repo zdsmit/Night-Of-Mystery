@@ -74,7 +74,7 @@ function createScenario(scenario) {
 
   let p = document.createElement("p")
   p.setAttribute("class", "scenario_text")
-  let alteredText = nounFilter(scenario.attributes.text, hero.name, heroine.name, item.name)
+  let alteredText = insertOption(scenario.attributes.text, "ring", itemType)
   p.innerText = alteredText
   if (scenario.id == 7) {
     p.style.color = "red"
@@ -99,13 +99,16 @@ function createScenario(scenario) {
 }
 
 let insertOption = function(text, oldName, newName) {
-  let split = text.split(" ")
-  split.forEach(word => {
-    if (word == oldName) {
-      split.splice(split.indexOf(word), 1, newName)
+  let split1 = text.split(" ")
+  split1.forEach(word => {
+    let split2 = word.split("*")
+    if (split2[1] == oldName) {
+      split2.splice(1, 1, newName)
+      split1.splice(split1.indexOf(word), 1, split2.join(""))
     }
   })
-  return split.join(" ")
+  console.log(split1.join(" "))
+  return split1.join(" ")
 }
 
 let nounFilter = function(text, maleName, femaleName, itemType) {
