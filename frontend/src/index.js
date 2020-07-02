@@ -20,8 +20,23 @@ function getScenario(id) {
 document.addEventListener("DOMContentLoaded", () => {
   let div = document.createElement("div")
   let h2 = document.createElement("h2")
+  let ul = document.createElement("ul")
   h2.innerText = "Users"
+
+  fetch(USERS_URL)
+  .then(res => res.json())
+  .then(users => {
+    users.data.forEach(user => {
+      if (!!user.attributes.name) {
+        let li = document.createElement("li")
+        li.innerText = user.attributes.name
+        ul.appendChild(li)
+      }
+    })
+  })
+
   div.appendChild(h2)
+  div.appendChild(ul)
   document.querySelector("main").appendChild(div)
 })
 
