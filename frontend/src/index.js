@@ -26,12 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch(USERS_URL)
   .then(res => res.json())
   .then(users => {
-    users.data.forEach(user => {
-      if (!!user.attributes.name) {
-        let li = document.createElement("li")
-        li.innerText = user.attributes.name
-        ul.appendChild(li)
+
+    users.data.sort(function(a, b) {
+      if (a.attributes.name > b.attributes.name) {
+        return 1
       }
+    })
+    users.data.forEach(user => {
+      let li = document.createElement("li")
+      li.innerText = user.attributes.name
+      ul.appendChild(li)
     })
   })
 
@@ -98,7 +102,7 @@ function createScenario(scenario) {
   document.querySelector("main").appendChild(div)
 }
 
-let insertOption = function(text, oldName, newName) {
+const insertOption = function(text, oldName, newName) {
   let split1 = text.split(" ")
   split1.forEach(word => {
     let split2 = word.split("*")
